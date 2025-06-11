@@ -147,6 +147,7 @@ body {
     grid-template-rows: 0fr;
     transition: 300ms ease-in-out;
     place-content: center;
+
     >div {
         overflow: hidden;
     }
@@ -250,6 +251,18 @@ button.rotate svg:last-child {
     }
 }
 
+@media (min-width: 1440px) and (max-width:1800px) {
+    .container {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1801px) and (max-width:4000px) {
+    .container {
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+}
 
 
 
@@ -257,7 +270,9 @@ button.rotate svg:last-child {
 main {
     padding: min(30px, 7%);
 }
-
+main h2{
+    padding-bottom: 10px;
+}
 main p {
     color: var(--secondary-clr);
     border-radius: 1em;
