@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="nav_style.css">
+
+    <script src="nav_script.js" defer></script>
+</head>
+
+<body class="dark">
+
+    <nav id="sidebar" >
+        <ul>
+            <li class="header_title">
+                <span class="logo">
+                    Blogs
+                </span>
+                <button id="toggle-sidebar-btn" onclick="toggleSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z" />
+                    </svg></button>
+            </li>
+            <li class="active">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg><span>home</span></a>
+            </li>
+            <li class="">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h440l200 200v440q0 33-23.5 56.5T760-120H200Zm0-80h560v-400H600v-160H200v560Zm80-80h400v-80H280v80Zm0-320h200v-80H280v80Zm0 160h400v-80H280v80Zm-80-320v160-160 560-560Z" />
+                    </svg><span>Dashboard</span></a>
+            </li>
+            <li>
+                <button class="dropdown-btn" onclick="toggleSubmenu(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+                    </svg>
+                    <span>create</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li>
+                            <a href="#">blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">comments</a>
+                        </li>
+                        <li>
+                            <a href="#">other</a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button class="dropdown-btn" onclick="toggleSubmenu(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z" />
+                    </svg>
+                    <span>Analytics</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li>
+                            <a href="#">blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">comments</a>
+                        </li>
+                        <li>
+                            <a href="#">other</a>
+                        </li>
+                        <li>
+                            <a href="#">comments</a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+            <li class="">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                    </svg><span>calender</span></a>
+            </li>
+            <li class=""><a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#1f1f1f">
+                        <path
+                            d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z" />
+                    </svg><span>profile</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Hello world</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis justo dignissim, luctus enim
+                at, porttitor neque. Cras eros quam, congue in luctus nec, posuere nec dui. Mauris nisl mauris, pharetra
+                sed maximus id, vulputate sit amet elit. Quisque scelerisque interdum elit eu cursus. Duis volutpat eros
+                est, vel fermentum nisi cursus vel. Ut quis ex tincidunt, tempus lacus at, vestibulum urna. Ut eget
+                lobortis turpis. Duis congue, purus ut sodales malesuada, felis felis fermentum odio, eget ultricies
+                nisi lectus quis lorem. Praesent at velit in enim semper pulvinar. Fusce vel nisi eget arcu hendrerit
+                porta. Suspendisse finibus lorem vel eros vehicula, nec ultricies lorem aliquam.</p>
+        </div>
+        <div class="container">
+            <h2>Example heading</h2>
+            <p>Nunc vestibulum tincidunt tincidunt. Vivamus eget fringilla sapien. Donec maximus purus nisl, sed aliquam
+                elit consequat et. Nullam et dui at nunc accumsan rutrum. Etiam non laoreet turpis, quis dictum arcu.
+                Quisque in risus metus. Donec laoreet, magna a vulputate lobortis, ex urna semper augue, non cursus erat
+                ante ut libero. Pellentesque et semper ex. Morbi luctus elit eu semper laoreet. Vestibulum rhoncus
+                scelerisque ex quis volutpat. Donec ac tellus sagittis, pharetra leo vitae, accumsan eros. Integer nec
+                odio vitae orci laoreet aliquet id vitae elit. Vestibulum aliquet lacus convallis placerat sollicitudin.
+                Aenean elementum, augue sit amet maximus hendrerit, lacus orci porta ante, vel commodo nisl ante sed mi.
+            </p>
+        </div>
+        <div class="container">
+            <h2>Example heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis justo dignissim, luctus enim
+                at, porttitor neque. Cras eros quam, congue in luctus nec, posuere nec dui. Mauris nisl mauris, pharetra
+                sed maximus id, vulputate sit amet elit. Quisque scelerisque interdum elit eu cursus. Duis volutpat eros
+                est, vel fermentum nisi cursus vel. Ut quis ex tincidunt, tempus lacus at, vestibulum urna. Ut eget
+                lobortis turpis. Duis congue, purus ut sodales malesuada, felis felis fermentum odio, eget ultricies
+                nisi lectus quis lorem. Praesent at velit in enim semper pulvinar. Fusce vel nisi eget arcu hendrerit
+                porta. Suspendisse finibus lorem vel eros vehicula, nec ultricies lorem aliquam.
+                Nunc vestibulum tincidunt tincidunt. Vivamus eget fringilla sapien. Donec maximus purus nisl, sed
+                aliquam
+                elit consequat et. Nullam et dui at nunc accumsan rutrum. Etiam non laoreet turpis, quis dictum arcu.
+                Quisque in risus metus. Donec laoreet, magna a vulputate lobortis, ex urna semper augue, non cursus erat
+                ante ut libero. Pellentesque et semper ex. Morbi luctus elit eu semper laoreet. Vestibulum rhoncus
+                scelerisque ex quis volutpat. Donec ac tellus sagittis, pharetra leo vitae, accumsan eros. Integer nec
+                odio vitae orci laoreet aliquet id vitae elit. Vestibulum aliquet lacus convallis placerat sollicitudin.
+                Aenean elementum, augue sit amet maximus hendrerit, lacus orci porta ante, vel commodo nisl ante sed mi.
+
+                Sed imperdiet enim sed lorem pellentesque, ac efficitur velit eleifend. Integer iaculis consectetur
+                aliquam. Etiam tincidunt augue odio, at posuere velit elementum ut. Sed a semper odio. Aenean et mattis
+                est, id suscipit dolor. Praesent imperdiet nisl non diam lobortis, eu aliquam arcu faucibus. Suspendisse
+                pretium nunc vitae lacus dignissim tempor. Aenean vitae molestie elit. Morbi convallis vel lorem nec
+                facilisis. Duis nisl ante, sagittis non elementum ac, sollicitudin eu justo. In efficitur mollis nisi, a
+                aliquam mauris mattis non. Nam blandit purus fringilla arcu euismod euismod. Ut libero ante, scelerisque
+                vitae ligula vitae, hendrerit accumsan enim. Aliquam aliquet auctor venenatis. Mauris commodo leo erat,
+                sit amet eleifend quam auctor id.
+
+                Vestibulum facilisis dolor sed nisi tempor convallis. Integer eu faucibus leo. Aliquam varius lacus leo,
+                eget sodales ante aliquam eu. Aliquam tempus luctus elit, sit amet venenatis purus. Nullam elit lectus,
+                sagittis eget scelerisque sed, vestibulum a lorem. Vestibulum id ligula sed arcu venenatis varius. Morbi
+                molestie mauris eget scelerisque sollicitudin. Proin convallis nisi mattis, rhoncus diam eu, pretium
+                odio. Phasellus vehicula, arcu blandit semper rutrum, est est laoreet risus, eu tincidunt justo dui quis
+                ipsum. Nam a malesuada mauris, ut rhoncus sapien. Fusce lobortis lacus quis risus efficitur venenatis.
+                Mauris vitae urna vitae augue tristique tincidunt. Proin vitae laoreet purus, vitae imperdiet neque.
+
+                Phasellus accumsan purus sed risus accumsan gravida sit amet sed leo. Sed tincidunt sem dui, vel
+                accumsan ipsum interdum et. Cras consectetur augue ut cursus pharetra. Suspendisse potenti. Sed ac felis
+                sit amet libero vehicula fermentum. Donec ut sapien ut arcu ornare dapibus id id nunc. Integer eget
+                turpis nisl. Fusce vel aliquet ex. Duis ut odio suscipit ipsum cursus vehicula at nec dui. Fusce
+                lobortis felis eget porta gravida. Donec elit justo, pretium ut urna a, accumsan malesuada tellus. Donec
+                ac placerat libero.</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
