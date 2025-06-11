@@ -146,7 +146,7 @@ body {
     display: grid;
     grid-template-rows: 0fr;
     transition: 300ms ease-in-out;
-
+    place-content: center;
     >div {
         overflow: hidden;
     }
