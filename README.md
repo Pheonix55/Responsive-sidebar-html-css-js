@@ -22,7 +22,7 @@ JavaScript (vanilla, no framework)
 .
 .
 
-collabsible sidebar
+collapsible sidebar
 .
 .
 ![image](https://github.com/user-attachments/assets/adc7437c-cd1d-4af9-8e49-862887e937f7)
