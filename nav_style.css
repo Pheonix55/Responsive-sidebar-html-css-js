@@ -103,6 +103,16 @@ body {
     }
 }
 
+.dropdown-btn.active span {
+    color: var(--accent-clr);
+
+}
+
+.dropdown-btn.active svg:first-child,
+.dropdown-btn.active svg:last-child {
+    fill: var(--accent-clr) !important; 
+}
+
 
 #sidebar a,
 #sidebar .dropdown-btn,
@@ -257,6 +267,7 @@ button.rotate svg:last-child {
         margin: 0 auto;
     }
 }
+
 @media (min-width: 1801px) and (max-width:4000px) {
     .container {
         max-width: 1360px;
@@ -270,9 +281,11 @@ button.rotate svg:last-child {
 main {
     padding: min(30px, 7%);
 }
-main h2{
+
+main h2 {
     padding-bottom: 10px;
 }
+
 main p {
     color: var(--secondary-clr);
     border-radius: 1em;
