@@ -1,48 +1,51 @@
-# Responsive-sidebar-html-css-js
-A stylish and responsive sidebar component built with HTML, CSS, and JavaScript. It supports both light and dark modes and adapts seamlessly to mobile and desktop screens.
+# 🌐 Responsive Sidebar UI
 
-✨ Features
-📱 Fully responsive design (mobile, tablet, desktop)
+A sleek, collapsible, and fully responsive sidebar built with **HTML**, **CSS**, and **Vanilla JavaScript**. Designed with modern UI/UX principles, this component adapts gracefully to all screen sizes and includes a built-in dark/light mode toggle.
 
-🌗 Dark mode / Light mode toggle
+---
 
-🎨 Smooth animations and modern UI
+## ✨ Features
 
-🔘 Collapsible sidebar with submenus
+- ✅ **Responsive Layout** — Works seamlessly across mobile, tablet, and desktop screens.
+- 🌙 **Dark / Light Mode Toggle** — Switch between themes with a single click.
+- 🎨 **Modern Aesthetics** — Smooth transitions and clean UI.
+- 🔽 **Collapsible Sidebar** — Expand/collapse with animation; supports nested submenus.
+- ⚡ **Pure HTML/CSS/JS** — No frameworks or libraries needed.
 
-🔧 Technologies Used
-HTML5
+---
+  live demo
+    - https://pheonix55.github.io/Responsive-sidebar-html-css-js/
+---
 
-CSS3 (with variables for themes)
+## 🔧 Technologies Used
 
-JavaScript (vanilla, no framework)
+- **HTML5** – Semantic markup
+- **CSS3** – Custom properties (variables) for theming
+- **JavaScript** – Vanilla JS for interactions (toggle, responsive behavior)
 
-![image](https://github.com/user-attachments/assets/45b649ab-c795-44de-a008-4f5696a52fca)
-.
-.
-.
+---
 
-collapsible sidebar
-.
-.
-![image](https://github.com/user-attachments/assets/adc7437c-cd1d-4af9-8e49-862887e937f7)
-.
-.
-submenu
-.
-.
-![image](https://github.com/user-attachments/assets/038b13db-35c9-4449-8dca-e2f8a4baf9fb)
-.
-.
-mobile view
-.
-.
-![image](https://github.com/user-attachments/assets/d3e31797-6d55-4a0d-99f2-660664ce6e6b)
-.
-.
-![image](https://github.com/user-attachments/assets/b2d32f16-cb5c-4b00-8a62-fb8fbe8a6917)
-.
-.
-.
-![image](https://github.com/user-attachments/assets/c3f4cfdd-b770-4ff1-8ccf-6db14320a37c)
-.
+
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+```bash
+git clone https://github.com/your-username/responsive-sidebar.git
+cd responsive-sidebar
+```
+Then simply open index.html in your browser.
+
+No build process required. Just plug and play!
+
+📸 ScreenRecording
+  - https://www.awesomescreenshot.com/video/40961098?key=a6310e560e766a9c2127ed789e7d7da4
+
+📃 License
+This project is licensed under the MIT License.
+
+🙋‍♂️ Author
+Muhammad Ali
+Frontend / Laravel Developer
+GitHub | LinkedIn
